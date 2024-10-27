@@ -24,6 +24,8 @@ require("nvim-tree").setup({
   },
 })
 
+nvimtree = require("nvim-tree.api")
+vim.keymap.set('n', '<leader>pv', function() nvimtree.tree.toggle() end)
 
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
@@ -37,7 +39,6 @@ local function my_on_attach(bufnr)
 
   -- custom mappings
   vim.keymap.set('n', '<C-[>', api.tree.change_root_to_parent,        opts('Up'))
-  vim.keymap.set('n', 't', function() api.tree.toggle() end, opts('Toggle Tree'))
   vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
 end
 
