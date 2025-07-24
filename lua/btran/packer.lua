@@ -28,5 +28,12 @@ use {
   },
 }
 
+use {
+  'neovim/nvim-lspconfig',  -- Core LSP configurations
+}
+
+use 'hrsh7th/nvim-cmp'              -- Autocompletion UI
+use 'hrsh7th/cmp-nvim-lsp'          -- LSP source for nvim-cmp
+
 end)
 
