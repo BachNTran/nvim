@@ -35,5 +35,8 @@ use {
 use 'hrsh7th/nvim-cmp'              -- Autocompletion UI
 use 'hrsh7th/cmp-nvim-lsp'          -- LSP source for nvim-cmp
 
+use 'akinsho/toggleterm.nvim'
+
+
 end)
 
